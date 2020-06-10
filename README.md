@@ -48,4 +48,4 @@ Todos os outros projetos, que não se enquadrem em suas ```inclusions``` e ```ex
 Pull requests são bem-vindos. É preciso contornar algumas limitações, como checar mais do que apenas a primeira página, para o caso de o intervalo de checagem ser muito grande, dentre outras.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+[ISC](https://opensource.org/licenses/ISC)
