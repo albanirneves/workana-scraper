@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <body style="
+        margin: 20px;
+        font-size: 20px;
+        background-color: lavender;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    ">
+
+    {{#each projects}}
+        <a style="width: 100%;" href="{{link}}">{{title}}</a>
+        <div style="width: 100%; margin-bottom: 30px;">{{description}}</div>
+    {{/each}}
+  </body>
+</html>

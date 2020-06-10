@@ -1,0 +1,16 @@
+{
+  "name": "workana-scraper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemailer": "^6.4.8",
+    "nodemailer-express-handlebars": "^4.0.0",
+    "puppeteer": "^3.3.0"
+  }
+}

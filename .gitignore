@@ -1,0 +1,4 @@
+src/config.json
+src/daemon
+node_modules
+package-lock.json
