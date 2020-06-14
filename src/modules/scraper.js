@@ -30,12 +30,16 @@ module.exports = async function scraper() {
         const notSended = !lastResults.some(lastProject => lastProject.title == project.title);
 
         const excludes = !exclusions.some(exclusion => {
-            const regexp = new RegExp(exclusion, 'i');
-
-            return (
-                !!project.title.match(regexp) || 
-                !!project.description.match(regexp)
-            );
+            if(exclusion == '*'){ 
+                return true;
+            } else {
+                const regexp = new RegExp(exclusion, 'i');
+    
+                return (
+                    !!project.title.match(regexp) || 
+                    !!project.description.match(regexp)
+                );
+            }
         });
 
         const includes = inclusions.some(inclusion => {

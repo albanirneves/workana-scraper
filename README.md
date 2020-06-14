@@ -38,12 +38,11 @@ Você precisa criar o arquivo ```src/config.json``` com as seguintes especifica�
 
 ```nodemailerConfig```: Configuração do servidor de emails de envio.
 
-```exclusions```: Caso estas palavras estejam no título ou descrição, o projeto não retornará nas notificações.
-
+```exclusions```: Caso estas palavras estejam no título ou descrição, o projeto não entrará nas notificações. Se ["*"], o sistema enviará notificações apenas quando encontrar as palavras chave de ```inclusions```.
 
 ```inclusions```: Caso estas palavras estejam no título ou descrição, você sempre será notificado, ignorando as ```exclusions```.
 
-Todos os outros projetos, que não se enquadrem em suas ```inclusions``` e ```exclusions``` virão por padrão nas notificações.
+Todos os outros projetos, que não se enquadrem em suas ```inclusions``` e ```exclusions``` virão por padrão nas notificações (exceto quando ```exclusions``` for ["*"])
 
 Pull requests são bem-vindos. É preciso contornar algumas limitações, como checar mais do que apenas a primeira página, para o caso de o intervalo de checagem ser muito grande, dentre outras.
 
