@@ -12,7 +12,7 @@ module.exports = async function scraper() {
         const results = [];
 
         document
-            .querySelectorAll('.project-item:not(.project-item-featured)')
+            .querySelectorAll('.project-item')
             .forEach(project => {
                 results.push({
                     link: project.querySelector('.project-title > a').href,
